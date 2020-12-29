@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello
-        run: echo "Hello World"
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: echo "Hello World "
+        run: echo ${TOKEN}
