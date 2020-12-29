@@ -8,5 +8,6 @@ jobs:
       - name: Hello
         env:
           TOKEN: ${{ secrets.TOKEN }}
-        run: echo "Hello World "
-        run: echo ${TOKEN}
+        run: |
+          echo "Hello World "
+          echo ${TOKEN}
