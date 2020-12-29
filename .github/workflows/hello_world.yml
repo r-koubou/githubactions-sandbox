@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.VSCE }}
         run: |
           echo "Hello World "
           echo ${TOKEN}
